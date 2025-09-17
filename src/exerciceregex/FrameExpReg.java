@@ -30,10 +30,14 @@ public class FrameExpReg extends JFrame {
             //codez ici
 
             // créer un objet Enregistrement
-        
+                Enregistrement e = new Enregistrement(champNom.getText(),champMotPasse.getText(), champCourriel.getText());
             // créer un objet Controleur
-        
+                Controleur c = new Controleur();
             //faire les vérifications
+            boolean q1 = c.verifCouriel(e);
+            boolean q2 = c.verifNom(e);
+            boolean q3 = c.verifMotDePasse(e);
+            System.out.println("good");
         }
     }
 }

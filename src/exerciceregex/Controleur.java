@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class Controleur {
     public boolean verifNom(Enregistrement e){
-        String reg = "^R[1-3][A-Z][a-z]{4}[A-Z][a-z]";
+        String reg = "R[1-3][A-Z][a-z]{4}[A-Z][a-z]$";
 
         return (e.getNomUsager().matches(reg));
     }
